@@ -25,7 +25,7 @@ html * {
   flex-flow: column;
 }
 
-.teams .team > *:last-child {
+.teams .team>*:last-child {
   flex-grow: 1;
 }
 
@@ -41,14 +41,14 @@ html * {
   background-color: khaki;
 }
 
-.teams .team > .title {
+.teams .team>.title {
   margin: 0;
   padding: 0;
   color: white;
   font-size: 2em;
 }
 
-.teams .team > .roster {
+.teams .team>.roster {
   padding: 3px;
   border-radius: 3px;
   background-color: white;
@@ -58,13 +58,13 @@ html * {
   align-content: flex-start;
 }
 
-.teams .team > .roster > * {
+.teams .team>.roster>* {
   width: 200px;
   margin: 3px;
 }
 
 @media (min-width: 825px) {
-  .team > .roster > * {
+  .team>.roster>* {
     width: calc(50% - 6px);
     margin: 3px;
   }
@@ -85,7 +85,7 @@ html * {
   align-items: center;
 }
 
-.doggo > h1 {
+.doggo>h1 {
   margin: 0;
   padding: 0;
   font-size: 1.4em;
@@ -107,27 +107,35 @@ html * {
 #toxic-tim {
   background-image: url(./images/toxic_tim.jpg);
 }
+
 #bumble-bertha {
   background-image: url(./images/bumble_bertha.jpg);
 }
+
 #nina-the-ninja {
   background-image: url(./images/nina_the_ninja.jpg);
 }
+
 #larry-the-lion {
   background-image: url(./images/larry_the_lion.jpg);
 }
+
 #inbread-dog {
   background-image: url(./images/inbread_dog.jpg);
 }
+
 #four-fists-larry {
   background-image: url(./images/four_fists_phil.jpg);
 }
+
 #knight-nicholas {
   background-image: url(./images/knight_nicholas.jpg);
 }
+
 #archmage-alfie {
   background-image: url(./images/archmage_alfie.jpg);
 }
+
 #moneybags-michael {
   background-image: url(./images/moneybags_michael.jpg);
 }
@@ -139,21 +147,21 @@ html * {
   flex-flow: row;
 }
 
-.application > *:not(:last-child) {
+.application>*:not(:last-child) {
   margin-right: 3px;
 }
 
-.application > form {
+.application>form {
   flex-grow: 1;
   display: flex;
   flex-flow: column;
 }
 
-.application > form > div {
+.application>form>div {
   display: flex;
 }
 
-.application > form > div > label {
+.application>form>div>label {
   width: 5rem;
   flex-shrink: 0;
 }
@@ -164,4 +172,12 @@ html * {
 
 .doggo.dead {
   opacity: 0.2;
+}
+
+.inverted {
+  filter: invert(100%);
+}
+
+.flipped {
+  transform: rotate(180deg);
 }
